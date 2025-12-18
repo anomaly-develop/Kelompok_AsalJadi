@@ -4,7 +4,7 @@ type
     account = record
         username : string;
         PIN : string;
-        balance : integer;
+        balance : longint;
         history_c : integer;
     end;
 
@@ -43,7 +43,6 @@ begin
     begin
         writeln(b, '. ', his[b].deskripsi, ' - Rp', his[b].nominal);
         writeln('   Waktu: ', his[b].waktu);
-        readln;
     end;
 end;
 
